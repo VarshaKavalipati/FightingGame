@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Fighting Game</title>
+</head>
+<body>
+    <div class="hed"><h1>FIGHTING GAME!</h1></div>
+    <div class="container">
+        <div class="first">
+            <div class="player1">
+                <div class="pl">PLAYER 1</div>
+                <div class="im">
+                    <img id='im1' src="https://i.gifer.com/origin/00/0019f6845ceaa9347b881ccbe8f5644a_w200.gif" class="ian">
+                </div>
+                <div class="attack">Q : Attack</div>
+                <div class="heal">A : Heal</div>
+                <div class="score">
+                    <span id="sc1">100</span>
+                </div>
+            </div>
+            <div class="player2">
+                <div class="pl">PLAYER 2</div>
+                <div class="im">
+                    <img id='im2' src="assests/ken-akuma.gif" class="ian">
+                </div>
+                <div class="attack">P : Attack</div>
+                <div class="heal">L : Heal</div>
+                <div class="score">
+                    <span id="sc2">100</span>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <span id="winner"> </span>
+        </div>
+        <div class="third">
+            <button id="reset">RESET</button>
+        </div>
+    </div>
+    <audio id="p1attack" controls style="display:none">
+        <source src="assests/fastpunch.mp3" type="audio/mpeg"> 
+      </audio>
+      <audio id="p1heal" controls style="display:none">
+        <source src="assests/fastheal.mp3" type="audio/mpeg"> 
+      </audio>
+      <audio id="p2attack" controls style="display:none">
+        <source src="assests/quickhit.mp3" type="audio/mpeg"> 
+      </audio>
+      <audio id="p2heal" controls style="display:none">
+        <source src="assests/quickheal.mp3" type="audio/mpeg"> 
+      </audio>
+      <audio id="victory" controls style="display:none">
+        <source src="assests/victory.mp3" type="audio/mpeg"> 
+      </audio>
+    <script src="game.js"></script>
+</body>
+</html>
