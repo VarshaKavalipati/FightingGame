@@ -94,6 +94,6 @@ document.addEventListener('keydown',function(e){
 })
 reset.onclick=function(){
     game.resetGame();
-    p2im.src='assests/ken-akuma.gif';
+    p2im.src='./assests/ken-akuma.gif';
     p1im.src="https://i.gifer.com/origin/00/0019f6845ceaa9347b881ccbe8f5644a_w200.gif";
 }
